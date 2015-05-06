@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BAF5BC3E-B88E-4433-A823-9A56F9BC099B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aerolinea</RootNamespace>
+    <AssemblyName>Aerolinea</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AyudaBusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyudaBusqueda.Designer.cs">
+      <DependentUpon>AyudaBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyudaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyudaCliente.Designer.cs">
+      <DependentUpon>AyudaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyudaClientesContactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyudaClientesContactos.Designer.cs">
+      <DependentUpon>AyudaClientesContactos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyudaEligetuvuelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyudaEligetuvuelo.Designer.cs">
+      <DependentUpon>AyudaEligetuvuelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyudaPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyudaPagar.Designer.cs">
+      <DependentUpon>AyudaPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyudaPromocion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyudaPromocion.Designer.cs">
+      <DependentUpon>AyudaPromocion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyudaServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyudaServicios.Designer.cs">
+      <DependentUpon>AyudaServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyudaServiciosAdicionales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyudaServiciosAdicionales.Designer.cs">
+      <DependentUpon>AyudaServiciosAdicionales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyudaVuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyudaVuelos.Designer.cs">
+      <DependentUpon>AyudaVuelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesVuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientesVuelos.Designer.cs">
+      <DependentUpon>ClientesVuelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservacionesAsientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservacionesAsientos.designer.cs">
+      <DependentUpon>ReservacionesAsientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VueloBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VueloBuscar.designer.cs">
+      <DependentUpon>VueloBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientesClientes.designer.cs">
+      <DependentUpon>ClientesClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesContactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientesContactos.designer.cs">
+      <DependentUpon>ClientesContactos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicioAdicionalAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicioAdicionalAgregar.Designer.cs">
+      <DependentUpon>ServicioAdicionalAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PromocionAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PromocionAgregar.Designer.cs">
+      <DependentUpon>PromocionAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VueloEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VueloEditar.Designer.cs">
+      <DependentUpon>VueloEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VueloAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VueloAgregar.Designer.cs">
+      <DependentUpon>VueloAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda.Designer.cs">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PromocionBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PromocionBuscar.Designer.cs">
+      <DependentUpon>PromocionBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicioAdicionalBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicioAdicionalBuscar.Designer.cs">
+      <DependentUpon>ServicioAdicionalBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservaciones.Designer.cs">
+      <DependentUpon>Reservaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vuelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vuelo.designer.cs">
+      <DependentUpon>Vuelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PromocionEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PromocionEditar.Designer.cs">
+      <DependentUpon>PromocionEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicioAdicionalEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicioAdicionalEditar.Designer.cs">
+      <DependentUpon>ServicioAdicionalEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles.cs" />
+    <Compile Include="ReservacionesVuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservacionesVuelos.Designer.cs">
+      <DependentUpon>ReservacionesVuelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservacionesClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservacionesClientes.Designer.cs">
+      <DependentUpon>ReservacionesClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservacionesPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservacionesPagar.Designer.cs">
+      <DependentUpon>ReservacionesPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Promocion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Promocion.Designer.cs">
+      <DependentUpon>Promocion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservacionesServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservacionesServicios.Designer.cs">
+      <DependentUpon>ReservacionesServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicioAdicional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicioAdicional.Designer.cs">
+      <DependentUpon>ServicioAdicional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Methods\Database.cs" />
+    <Compile Include="_Methods\mAsientos.cs" />
+    <Compile Include="_Methods\mClientes.cs" />
+    <Compile Include="_Methods\mContactos.cs" />
+    <Compile Include="_Methods\mEmail.cs" />
+    <Compile Include="_Methods\mFacturas.cs" />
+    <Compile Include="_Methods\mPromociones.cs" />
+    <Compile Include="_Methods\mReservaciones.cs" />
+    <Compile Include="_Methods\mReservacionesServicios.cs" />
+    <Compile Include="_Methods\mServiciosAdicionales.cs" />
+    <Compile Include="_Methods\mTarjetasDeCredito.cs" />
+    <Compile Include="_Methods\mVuelos.cs" />
+    <Compile Include="_Properties\pAsientos.cs" />
+    <Compile Include="_Properties\pClientes.cs" />
+    <Compile Include="_Properties\pContactos.cs" />
+    <Compile Include="_Properties\pFacturas.cs" />
+    <Compile Include="_Properties\pPromociones.cs" />
+    <Compile Include="_Properties\pReservaciones.cs" />
+    <Compile Include="_Properties\pReservacionesAll.cs" />
+    <Compile Include="_Properties\pReservacionesServicios.cs" />
+    <Compile Include="_Properties\pServiciosAdicionales.cs" />
+    <Compile Include="_Properties\pTarjetasDeCredito.cs" />
+    <Compile Include="_Properties\pVuelos.cs" />
+    <EmbeddedResource Include="AyudaBusqueda.resx">
+      <DependentUpon>AyudaBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyudaCliente.resx">
+      <DependentUpon>AyudaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyudaClientesContactos.resx">
+      <DependentUpon>AyudaClientesContactos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyudaEligetuvuelo.resx">
+      <DependentUpon>AyudaEligetuvuelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyudaPagar.resx">
+      <DependentUpon>AyudaPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyudaPromocion.resx">
+      <DependentUpon>AyudaPromocion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyudaServicios.resx">
+      <DependentUpon>AyudaServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyudaServiciosAdicionales.resx">
+      <DependentUpon>AyudaServiciosAdicionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyudaVuelos.resx">
+      <DependentUpon>AyudaVuelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientesVuelos.resx">
+      <DependentUpon>ClientesVuelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservacionesAsientos.resx">
+      <DependentUpon>ReservacionesAsientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VueloBuscar.resx">
+      <DependentUpon>VueloBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientesClientes.resx">
+      <DependentUpon>ClientesClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientesContactos.resx">
+      <DependentUpon>ClientesContactos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicioAdicionalAgregar.resx">
+      <DependentUpon>ServicioAdicionalAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PromocionAgregar.resx">
+      <DependentUpon>PromocionAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VueloEditar.resx">
+      <DependentUpon>VueloEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VueloAgregar.resx">
+      <DependentUpon>VueloAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda.resx">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PromocionBuscar.resx">
+      <DependentUpon>PromocionBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicioAdicionalBuscar.resx">
+      <DependentUpon>ServicioAdicionalBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservaciones.resx">
+      <DependentUpon>Reservaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PromocionEditar.resx">
+      <DependentUpon>PromocionEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicioAdicionalEditar.resx">
+      <DependentUpon>ServicioAdicionalEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservacionesVuelos.resx">
+      <DependentUpon>ReservacionesVuelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservacionesClientes.resx">
+      <DependentUpon>ReservacionesClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservacionesPagar.resx">
+      <DependentUpon>ReservacionesPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Promocion.resx">
+      <DependentUpon>Promocion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReservacionesServicios.resx">
+      <DependentUpon>ReservacionesServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicioAdicional.resx">
+      <DependentUpon>ServicioAdicional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vuelo.resx">
+      <DependentUpon>Vuelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AND.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VIP.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
